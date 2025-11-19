@@ -1,0 +1,26 @@
+{
+  "name": "nasr-alex",
+  "version": "1.0.0",
+  "description": "This back end folder to Nasr Alex",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "author": "Ahmed Zakria",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.0.3",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
+  }
+}

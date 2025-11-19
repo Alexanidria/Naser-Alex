@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Minimal shield logo">
+  <!-- Outer rounded shield -->
+  <defs>
+    <style>
+      .border { fill: none; stroke: #000; stroke-width:14; stroke-linejoin:round; }
+      .red { fill:#e31b23; stroke:#000; stroke-width:6; stroke-linejoin:round; }
+      .white { fill:#ffffff; stroke:#000; stroke-width:6; stroke-linejoin:round; }
+      .black { fill:#111111; stroke:#000; stroke-width:6; stroke-linejoin:round; }
+      .kufi { fill:none; stroke:#2aa12a; stroke-width:20; stroke-linecap:square; stroke-linejoin:miter; }
+    </style>
+  </defs>
+
+  <!-- Shield shape as a rounded rectangle path (slightly tapered) -->
+  <path id="shield" class="border" d="M56 48 C56 28 120 16 256 16 C392 16 456 28 456 48 L440 416 C440 464 384 496 256 496 C128 496 72 464 56 416 Z" fill="none"/>
+
+  <!-- Fill areas built inside the shield -->
+  <!-- Top red triangle-like shape -->
+  <path class="red" d="M66 64 C66 48 124 28 256 28 C388 28 446 48 446 64 L366 152 L66 152 Z"/>
+
+  <!-- White diagonal band -->
+  <path class="white" d="M66 152 L366 152 L446 296 L146 296 Z"/>
+
+  <!-- Bottom black area -->
+  <path class="black" d="M146 296 L446 296 L430 440 C430 480 380 496 256 496 C132 496 82 480 72 440 Z"/>
+
+  <!-- Green Kufic-style geometric inscription (stylized) -->
+  <!-- This is a simplified geometric/kufi-like path to match the blocky appearance -->
+  <polyline class="kufi" points="120,320 200,240 260,300 320,240 360,276 300,340 220,260 180,300" transform="rotate(-30 256 256) translate(40,20)"/>
+
+  <!-- Optional: thin inner outline to keep shapes crisp -->
+  <path d="M66 152 L366 152 L446 296 L146 296 Z" fill="none" stroke="#000" stroke-width="3" stroke-linejoin="round" opacity="0.5"/>
+
+</svg>
