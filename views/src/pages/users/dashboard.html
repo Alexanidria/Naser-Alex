@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم</title>
+  <style>
+    body { font-family: Tahoma; background: #eef1f5; }
+    .menu { background: #333; color: white; padding: 10px; }
+    .menu a { color: white; margin: 0 10px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="menu" id="menu"></div>
+  <h2>مرحبًا بك في لوحة التحكم</h2>
+  <div id="content"></div>
+
+  <script>
+    async function loadMenu() {
+      const token = localStorage.getItem('token');
+      // if (!token) return window.location.href = "login.html";
+
+      const res = await fetch('/api/screens', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+
+      const screens = await res.json();
+
+      // عرض فقط الشاشات المسموح بها
+      const menuDiv = document.getElementById('menu');
+      screens.forEach(s => {
+        if (s.can_view) {
+          const link = document.createElement('a');
+          link.href = s.screen_code + ".html";
+          link.textContent = s.screen_name;
+          menuDiv.appendChild(link);
+        }
+      });
+    }
+
+    loadMenu();
+  </script>
+</body>
+</html>

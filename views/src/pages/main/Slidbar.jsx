@@ -9,11 +9,11 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  // useTheme,
+  useTheme,
   Tooltip,
 } from "@mui/material";
-// import InboxIcon from "@mui/icons-material/MoveToInbox";
-// import MailIcon from "@mui/icons-material/Mail";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
 import { grey } from "@mui/material/colors";
 import { items, store } from "./menu";
 
