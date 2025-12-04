@@ -94,6 +94,6 @@ nx/
 # Database project
 script0.sql
 
-views_data/
+
 db-copy/
-updata/
+# updata/

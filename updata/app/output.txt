@@ -1,0 +1,2 @@
+[store].[Ta_post]
+[store].[Ta_TranMovHeder]

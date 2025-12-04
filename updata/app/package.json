@@ -1,0 +1,22 @@
+{
+  "name": "updata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "mssql": "^12.1.0",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3"
+  }
+}
